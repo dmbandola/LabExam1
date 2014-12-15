@@ -7,3 +7,8 @@ class Team(object):
     def check_if_int(self, score):
     	if type(score) == int:
     		return self.score
+
+
+if __name__ == '__main__':
+    result = Team()
+    print result
