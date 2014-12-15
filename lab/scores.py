@@ -10,7 +10,7 @@ class Score(object):
     def get_team_score(self, score):
         return self.teams.get(score)
 
-    def add_score(self, team_name, point, prev):
+    def add_score(self, team_name, points, score):
         if check_if_int(score) == true:
-            self.new = point + prev
-            return Team(team_name, new)
+            score = point + score
+            return Team(team_name, score)

@@ -7,11 +7,23 @@ APP = Flask(__name__)
 SCORES = Score()
 
 @APP.route('/')
-def hello_world():
+def index():
+    return render_template('lab.html')
+
+@APP.route('/')
+def display_teamA_score():
     """This is another function"""
-    team_name = request.args.get('team_name')
-    score = BANK.get_team_score(team_name)
-    return render_template('lab.html', score=score)
+    teamA = request.args.get('Team A')
+    scoreA = BANK.get_team_score(teamA)
+    return render_template('success.html', scoreA=scoreA)
+
+@APP.route('/')
+def display_teamB_score():
+    """This is another function"""
+    teamB = request.args.get('Team B')
+    scoreB = BANK.get_team_score(teamB)
+    return render_template('success.html', scoreB=scoreB)
+
 
 if __name__ == '__main__':
     import cProfile
