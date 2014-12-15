@@ -1,6 +1,6 @@
 from lab.teams import *
 
-class Scores(object):
+class Score(object):
     def __init__(self):
         teams = {}
 
