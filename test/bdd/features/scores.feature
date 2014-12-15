@@ -5,4 +5,7 @@ Feature: An app that tallies the score of two teams in a game
 		Scenario: Tally points of the team that scored
 		Given there are two teams Team A and Team B
 		When a team has scored
-		Then the scoring teams point will be added with the scored point
+		Then the scoring teams updated scores will be displayed
+			|team   |score|
+			|Team A | 0 |
+			|Team B | 0 |

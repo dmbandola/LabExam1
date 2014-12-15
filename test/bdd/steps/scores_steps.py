@@ -11,6 +11,6 @@ def given_there_are_two_teams_team_a_and_team_b(step):
 def when_a_team_has_scored(step):
 	assert True
 
-@step(u'Then the scoring teams point will be added with the scored point')
-def then_the_scoring_team_s_point_will_be_added_with_the_scored_point(step):
+@step(u'Then the scoring teams updated scores will be displayed')
+def then_the_scoring_teams_updated_scores_will_be_displayed(step):
 	assert True
